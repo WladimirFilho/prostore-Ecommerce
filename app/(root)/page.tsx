@@ -1,5 +1,5 @@
 const HomePage = () => {
-  return <>prostore</>;
+  return <></>;
 };
 
 export default HomePage;
