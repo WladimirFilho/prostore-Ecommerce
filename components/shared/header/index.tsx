@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { APP_NAME } from "@/lib/constants";
+import ModeToggle from "./mode_toggle";
 
 const Header = () => {
   return (
@@ -24,13 +25,22 @@ const Header = () => {
           </Link>
         </div>
         <div className="space-x-2">
-          <Button asChild variant="ghost">
+          <ModeToggle />
+          <Button
+            asChild
+            variant="ghost"
+            className=" hover:bg-black hover:text-white"
+          >
             <Link href="/cart" className="">
               <ShoppingCart /> Cart
             </Link>
           </Button>
 
-          <Button asChild variant="ghost">
+          <Button
+            asChild
+            variant="ghost"
+            className=" hover:bg-black hover:text-white"
+          >
             <Link href="/sign-in" className="">
               <UserIcon /> Sign In
             </Link>
