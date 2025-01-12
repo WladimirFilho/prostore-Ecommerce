@@ -1,7 +1,7 @@
 import ProductCard from "./product-card";
 
 const ProductList = ({
-  data,
+  data = [],
   title,
   limit,
 }: {
@@ -22,7 +22,7 @@ const ProductList = ({
         </div>
       ) : (
         <div>
-          <p>No Products</p>
+          <p>No products found</p>
         </div>
       )}
     </div>
