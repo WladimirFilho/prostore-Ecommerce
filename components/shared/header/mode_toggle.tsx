@@ -41,15 +41,6 @@ const ModeToggle = () => {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="flex flex-col">
-        {/* <DropdownMenuSeparator /> */}
-        {/* <DropdownMenuCheckboxItem
-          checked={theme === "system"}
-          onClick={() => {
-            setTheme("system");
-          }}
-        >
-          <SunMoon size={16} />
-        </DropdownMenuCheckboxItem> */}
         <DropdownMenuCheckboxItem
           checked={theme === "dark"}
           onClick={() => {

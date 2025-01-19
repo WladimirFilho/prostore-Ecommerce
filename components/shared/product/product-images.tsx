@@ -7,7 +7,7 @@ const ProductImage = ({ images }: { images: string[] }) => {
   const [current, setCurrent] = useState(0);
 
   return (
-    <div className="spacy-y-4">
+    <div className="space-y-4">
       <Image
         src={images[current]}
         alt="Product image"
